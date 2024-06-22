@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@font-face {
+    font-family: 'MeltedMonster';
+    src: url('./Resourses/MeltedMonster.ttf') format('truetype');
+}
 
 * {
     padding: 0;
@@ -12,6 +16,7 @@
     min-height: 100vh;
     background: linear-gradient(110deg, #F28C8C, #f4d6d6);
     padding-bottom: 20px;
+    min-width: 870px;
 }
 
 #curve {
@@ -40,7 +45,7 @@
 
 .left-cont,
 .right-cont {
-    flex: 1; 
+    flex: 1;
 }
 
 .left-cont {
@@ -68,7 +73,7 @@
 }
 
 
-                            /* Container2 Starts Here */
+/* Container2 Starts Here */
 
 
 .middle-container {
@@ -76,6 +81,7 @@
     padding-top: 20px;
     flex-direction: column;
     align-items: center;
+    min-width: 760px;
 }
 
 .middle-container h1 {
@@ -152,11 +158,12 @@
 }
 
 
-                /* Container3 Starts Here */
+/* Container3 Starts Here */
 
 .container3 {
     background: linear-gradient(110deg, #f5f3f179 0%, #ff6e611b 100%);
-
+    max-height: 165vh;
+    min-width: 850px;
 }
 
 
@@ -166,9 +173,9 @@ hr {
     width: 80%;
 }
 
-.midd-left-container{
-    margin-left: 100px;
-    margin-right: 100px;
+.midd-left-container {
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 .third-middle-container h1 {
@@ -176,7 +183,8 @@ hr {
     color: #FF6F61;
     font-size: 3rem;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+    letter-spacing: 8px;
 }
 
 .Featuredflex2 {
@@ -206,7 +214,14 @@ hr {
 }
 
 .left-cont2,
+.mid-cont2,
 .right-cont2 {
-    flex: 1; 
+    flex: 3;
+    justify-content: space-between;
     margin-bottom: 50px;
 }
+
+.container4 {
+    
+}
+
