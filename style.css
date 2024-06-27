@@ -73,7 +73,7 @@
 }
 
 
-/* Container2 Starts Here */
+                                                                                /* Container2 Starts Here */
 
 
 .middle-container {
@@ -158,7 +158,7 @@
 }
 
 
-/* Container3 Starts Here */
+                                                                        /* Container3 Starts Here */
 
 .container3 {
     background: linear-gradient(110deg, #f5f3f179 0%, #ff6e611b 100%);
@@ -221,7 +221,84 @@ hr {
     margin-bottom: 50px;
 }
 
+
+                                                                                /* Container4 Starts Here */
+
+
 .container4 {
+    align-items: center;
+
+}
+
+#cont4-h1{
+    text-align: center;
+    margin-top: 40px;
+    font-family: MeltedMonster;
+    font-size: 5rem;
+    color: #8B4513;
+}
+
+#cont4-hr{
+    width: 20rem;
+    margin-top: 15px;
+    margin-bottom: 90px;
+    color: #8B4513;
+}
+
+.fourth-middle-container{
+    display: flex;
+    justify-content: center;
+}
+
+/* .dicount-back{
+    background-color: #8B4513;
+    width: 600px;
     
+} */
+
+.align-container{
+    display: flex;
+    width: 65%;
+    font-family:  "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+.right-disco,
+.left-disco{
+    flex: 1;
+    /* color: whitesmoke; */
+}
+
+.fill-form{
+    display: flex;
+    align-items: center;
+    margin-top: 160px;
+
+}
+
+.fill-form input:not(.fill-form #submit){
+    border-radius: 10px;
+    width: 350px;
+    height: 50px;
+    margin-right: 15px;
+    padding: 0px 10px 0px 10px;
+    overflow: hidden;
+}
+
+#submit{
+    border-radius: 10px;
+    height: 50px;
+    width: 90px;
+}
+
+#smt-p{
+    margin-top: 20px;
+}
+
+#disco-img{
+    width: 470px;
+    height: 60px;
+    margin-bottom: 20px;
+    border-radius: 40px;
 }
 
