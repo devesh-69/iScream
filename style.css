@@ -73,7 +73,7 @@
 }
 
 
-                                                                                /* Container2 Starts Here */
+/* Container2 Starts Here */
 
 
 .middle-container {
@@ -158,14 +158,10 @@
 }
 
 
-                                                                        /* Container3 Starts Here */
-
+/* Container3 Starts Here */
 .container3 {
     background: linear-gradient(110deg, #f5f3f179 0%, #ff6e611b 100%);
-    max-height: 165vh;
-    min-width: 850px;
 }
-
 
 hr {
     margin: 0 auto;
@@ -204,7 +200,6 @@ hr {
     margin: 0 10%;
     margin-top: 50px;
     max-width: 1200px;
-
 }
 
 .Featuredflex2 img {
@@ -221,84 +216,246 @@ hr {
     margin-bottom: 50px;
 }
 
-
-                                                                                /* Container4 Starts Here */
-
-
+/* Container4 Starts Here */
 .container4 {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    margin-bottom: 90px;
 }
 
-#cont4-h1{
+#cont4-h1 {
     text-align: center;
     margin-top: 40px;
-    font-family: MeltedMonster;
+    font-family: 'MeltedMonster', sans-serif;
     font-size: 5rem;
     color: #8B4513;
+    z-index: 2;
 }
 
-#cont4-hr{
+#cont4-hr {
     width: 20rem;
     margin-top: 15px;
-    margin-bottom: 90px;
-    color: #8B4513;
+    margin-bottom: 50px;
+    border: 1px solid #8B4513;
+    z-index: 2;
 }
 
-.fourth-middle-container{
+.fourth-middle-container {
     display: flex;
     justify-content: center;
+    width: 100%;
+    z-index: 2;
 }
 
-/* .dicount-back{
-    background-color: #8B4513;
-    width: 600px;
-    
-} */
-
-.align-container{
+.align-container {
     display: flex;
-    width: 65%;
-    font-family:  "Poppins", sans-serif;
+    width: 70%;
+    font-family: 'Poppins', sans-serif;
     font-size: 15px;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 1px;
+    line-height: 25px;
 }
 
-.right-disco,
-.left-disco{
+.left-disco,
+.right-disco {
     flex: 1;
-    /* color: whitesmoke; */
+    margin: 10px;
+    position: relative;
+    z-index: 2;
 }
 
-.fill-form{
+.fill-form {
     display: flex;
     align-items: center;
-    margin-top: 160px;
-
+    margin-top: 100px;
 }
 
-.fill-form input:not(.fill-form #submit){
+.fill-form input[type="email"] {
     border-radius: 10px;
     width: 350px;
     height: 50px;
     margin-right: 15px;
-    padding: 0px 10px 0px 10px;
-    overflow: hidden;
+    padding: 0 10px;
 }
 
-#submit{
+#submit {
     border-radius: 10px;
     height: 50px;
     width: 90px;
+    font-weight: 900;
+    cursor: pointer;
+    background-color: #f6f2f055;
+    color: white;
+    border: 0.5px solid;
+    transition: 0.2s ease-in-out;
 }
 
-#smt-p{
-    margin-top: 20px;
+#submit:hover {
+    background-color: #8B4513;
+    border: none;
 }
 
-#disco-img{
-    width: 470px;
-    height: 60px;
-    margin-bottom: 20px;
-    border-radius: 40px;
+#smt-p {
+    margin-top: 30px;
 }
 
+#disco-img {
+    display: none;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Resourses/All ice creams/Sundae ice cream.jpg');
+    background-size: contain;
+    background-position: center;
+    filter: blur(10px);
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.right-disco>div {
+    padding: 0 10px;
+}
+
+
+/* Container5 Starts Here */
+
+
+.container5 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fift-midd-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    height: 80vh;
+    width: 80%;
+    padding: 20px;
+}
+
+.fifth-left-cont,
+.fifth-right-cont {
+    flex: 1;
+    margin: 10px;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.fifth-left-cont img {
+    max-width: 100%;
+    height: auto;
+}
+
+.fifth-right-cont p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .align-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .left-disco,
+    .right-disco {
+        margin: 10px 0;
+        flex: unset;
+        width: 100%;
+    }
+
+    .fill-form {
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 50px;
+    }
+
+    .fill-form input[type="email"] {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    #submit {
+        width: 100%;
+    }
+
+    #cont4-h1 {
+        font-size: 3rem;
+        margin-top: 20px;
+    }
+
+    #cont4-hr {
+        width: 60%;
+        margin: 15px auto;
+    }
+
+    #smt-p {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .right-disco>div {
+        padding: 10px;
+    }
+}
