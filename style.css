@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'MeltedMonster';
-    src: url('./Resourses/MeltedMonster.ttf') format('truetype');
+    src: url('./Resourses/MeltedMonster.woff2') format('truetype');
 }
 
 * {
