@@ -67,7 +67,7 @@ git push origin feature/cool-new-feature
 If you have any questions or feedback, feel free to reach out!
 
 - GitHub: [@devesh-69](https://github.com/devesh-69)
-- Linkedin: [Devesh Tatkare](https://www.linkedin.com/in/devesh-tatkare/)
+- Linkedin: [@Devesh Tatkare](https://www.linkedin.com/in/devesh-tatkare/)
 
 ---
 
