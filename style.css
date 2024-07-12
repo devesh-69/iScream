@@ -294,8 +294,8 @@ hr {
     font-weight: 900;
     cursor: pointer;
     background-color: #f6f2f055;
-    color: white;
-    border: 0.5px solid;
+    color: #8B4513;
+    border: 1px #8B4513 solid;
     transition: 0.2s ease-in-out;
 }
 
@@ -345,7 +345,7 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 80vh;
     width: 80%;
     padding: 20px;
@@ -355,12 +355,12 @@ hr {
 .fifth-right-cont {
     flex: 1;
     margin: 10px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 20px;
 }
 
 .fifth-left-cont img {
-    max-width: 100%;
+    max-width: 500px;
     height: auto;
 }
 
@@ -370,16 +370,16 @@ hr {
 }
 
 
+/* Container5 Starts Here */
+
+.container6{
+
+}
 
 
-
-
-
-
-
-
-
-
+.cards-middle{
+    
+}
 
 
 
