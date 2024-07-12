@@ -51,7 +51,7 @@
 .left-cont p {
     color: white;
     font-family: "Poppins", sans-serif;
-    font-size: 2rem;
+    font-size: 3.5rem;
 }
 
 #p2 {
@@ -224,7 +224,7 @@ hr {
     text-align: center;
     margin-top: 40px;
     font-family: 'MeltedMonster', sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #8B4513;
     z-index: 2;
 }
@@ -293,6 +293,7 @@ hr {
 
 #submit:hover {
     background-color: #8B4513;
+    color: white;
     border: none;
 }
 
@@ -332,6 +333,7 @@ hr {
     justify-content: center;
     padding: 20px;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 .fift-midd-container {
@@ -357,7 +359,7 @@ hr {
 
 .fifth-right-cont p {
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 /* Container6 Starts Here */
@@ -383,6 +385,10 @@ hr {
     margin: 0 10px;
     min-width: 200px;
 }
+
+
+
+
 
 
 
@@ -502,6 +508,7 @@ hr {
     .mid-cont2,
     .right-cont2 {
         flex: 3;
+        font-family: "Poppins", sans-serif;
     }
 
     .align-container {
