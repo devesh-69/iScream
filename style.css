@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 .containter1 {
     position: relative;
     min-height: 100vh;
@@ -365,43 +369,19 @@ hr {
 /* Container6 Starts Here */
 
 .container6 {
-    position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 70vh;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
     overflow: hidden;
 }
 
-.cards-middle {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-}
-
-.card {
-    flex: 0 0 auto;
-    margin: 0 10px;
-    min-width: 200px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* .cards-middle {
+    i will add later if anything needed
+} */
 
 
 
