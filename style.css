@@ -16,7 +16,6 @@
     min-height: 100vh;
     background: linear-gradient(110deg, #F28C8C, #f4d6d6);
     padding-bottom: 20px;
-    min-width: 870px;
 }
 
 #curve {
@@ -34,60 +33,52 @@
 
 .center-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     margin: 0 10%;
     margin-top: 50px;
-    height: 70vh;
+    height: auto;
     max-width: 1200px;
     background-color: transparent !important;
 }
 
 .left-cont,
 .right-cont {
-    flex: 1;
-}
-
-.left-cont {
-    text-align: left;
+    width: 100%;
+    text-align: center;
 }
 
 .left-cont p {
     color: white;
     font-family: "Poppins", sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 #p2 {
     color: white;
     font-family: "Poppins", sans-serif;
-    font-size: 1.5rem;
-}
-
-.right-cont {
-    text-align: right;
+    font-size: 1rem;
 }
 
 .right-cont img {
-    max-width: 600px;
+    max-width: 100%;
+    height: auto;
 }
 
 
 /* Container2 Starts Here */
-
 
 .middle-container {
     display: flex;
     padding-top: 20px;
     flex-direction: column;
     align-items: center;
-    min-width: 760px;
 }
 
 .middle-container h1 {
     font-family: "Poppins", sans-serif;
     margin: 40px 0px;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     color: #333;
 }
@@ -97,7 +88,6 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    max-width: 1200px;
     width: 100%;
     margin-top: 20px;
 }
@@ -117,7 +107,8 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 250px;
+    width: 90%;
+    max-width: 250px;
     text-align: center;
     transition: transform 0.2s ease-in-out;
 }
@@ -170,16 +161,16 @@ hr {
 }
 
 .midd-left-container {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .third-middle-container h1 {
     font-family: 'Lobster', cursive;
     color: #FF6F61;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     letter-spacing: 8px;
 }
 
@@ -188,13 +179,13 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
     width: 100%;
     margin-top: 20px;
 }
 
 .third-middle-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 0 10%;
@@ -203,7 +194,7 @@ hr {
 }
 
 .Featuredflex2 img {
-    height: 280px;
+    height: 200px;
     width: auto;
     border-radius: 100%;
 }
@@ -211,7 +202,7 @@ hr {
 .left-cont2,
 .mid-cont2,
 .right-cont2 {
-    flex: 3;
+    flex: 1;
     justify-content: space-between;
     margin-bottom: 50px;
 }
@@ -221,20 +212,19 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     padding: 20px;
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
     background-color: #f5f5f5;
-    margin-bottom: 90px;
+    margin-bottom: 50px;
 }
 
 #cont4-h1 {
     text-align: center;
     margin-top: 40px;
     font-family: 'MeltedMonster', sans-serif;
-    font-size: 5rem;
+    font-size: 3rem;
     color: #8B4513;
     z-index: 2;
 }
@@ -256,13 +246,14 @@ hr {
 
 .align-container {
     display: flex;
-    width: 70%;
+    flex-direction: column;
+    width: 90%;
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     position: relative;
     z-index: 2;
     letter-spacing: 1px;
-    line-height: 25px;
+    line-height: 1.5rem;
 }
 
 .left-disco,
@@ -275,13 +266,14 @@ hr {
 
 .fill-form {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .fill-form input[type="email"] {
     border-radius: 10px;
-    width: 350px;
+    width: 90%;
     height: 50px;
     margin-right: 15px;
     padding: 0 10px;
@@ -290,7 +282,7 @@ hr {
 #submit {
     border-radius: 10px;
     height: 50px;
-    width: 90px;
+    width: 100px;
     font-weight: 900;
     cursor: pointer;
     background-color: #f6f2f055;
@@ -319,7 +311,7 @@ hr {
     width: 100%;
     height: 100%;
     background-image: url('Resourses/All ice creams/Sundae ice cream.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     filter: blur(10px);
     z-index: 1;
@@ -333,60 +325,64 @@ hr {
 
 /* Container5 Starts Here */
 
-
 .container5 {
-    height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .fift-midd-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    /* border: 2px solid black; */
-    height: 80vh;
-    width: 80%;
-    padding: 20px;
+    height: auto;
+    width: 90%;
 }
 
 .fifth-left-cont,
 .fifth-right-cont {
-    flex: 1;
+    width: 100%;
     margin: 10px;
-    /* border: 2px solid black; */
     padding: 20px;
+    text-align: center;
 }
 
 .fifth-left-cont img {
-    max-width: 500px;
+    max-width: 100%;
     height: auto;
 }
 
 .fifth-right-cont p {
-    font-size: 1.2em;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
+/* Container6 Starts Here */
 
-/* Container5 Starts Here */
-
-.container6{
-
+.container6 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-
-.cards-middle{
-    
+.cards-middle {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
 
-
-
-
-
-
-
+.card {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    min-width: 200px;
+}
 
 
 
@@ -457,5 +453,71 @@ hr {
 
     .right-disco>div {
         padding: 10px;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .containter1 {
+        min-width: auto;
+    }
+
+    .center-container {
+        flex-direction: row;
+        height: 70vh;
+    }
+
+    .left-cont,
+    .right-cont {
+        flex: 1;
+        text-align: left;
+    }
+
+    .right-cont img {
+        max-width: 600px;
+    }
+
+    .middle-container {
+        min-width: auto;
+    }
+
+    .middle-container h1 {
+        font-size: 3rem;
+    }
+
+    .Featuredflex {
+        max-width: 1200px;
+    }
+
+    .card {
+        width: 250px;
+    }
+
+    .third-middle-container {
+        flex-direction: row;
+    }
+
+    .left-cont2,
+    .mid-cont2,
+    .right-cont2 {
+        flex: 3;
+    }
+
+    .align-container {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    .fill-form {
+        flex-direction: row;
+    }
+
+    .container5 {
+        height: 100vh;
+    }
+
+    .fift-midd-container {
+        flex-direction: row;
     }
 }
