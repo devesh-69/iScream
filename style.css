@@ -393,7 +393,56 @@ hr {
 
 
 
-/* Responsive adjustments */
+/* Responsive for 425px */
+@media screen and (max-width: 425px) {
+    .align-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .left-disco,
+    .right-disco {
+        margin: 10px 0;
+        flex: unset;
+        width: 100%;
+    }
+
+    .fill-form {
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 50px;
+    }
+
+    .fill-form input[type="email"] {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    #submit {
+        width: 100%;
+    }
+
+    #cont4-h1 {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    #cont4-hr {
+        width: 60%;
+        margin: 15px auto;
+    }
+
+    #smt-p {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .right-disco>div {
+        padding: 10px;
+    }
+}
+
+/* Responsive for 768px */
 @media screen and (max-width: 768px) {
     .align-container {
         flex-direction: column;
@@ -442,8 +491,7 @@ hr {
     }
 }
 
-
-
+/* for screens larger than 768px */
 @media (min-width: 768px) {
     .containter1 {
         min-width: auto;
