@@ -167,12 +167,13 @@ hr {
 .midd-left-container {
     margin-left: 5%;
     margin-right: 5%;
+    flex-direction: column;
 }
 
 .third-middle-container h1 {
     font-family: 'Lobster', cursive;
     color: #FF6F61;
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
     margin-bottom: 50px;
     letter-spacing: 8px;
@@ -210,6 +211,8 @@ hr {
     justify-content: space-between;
     margin-bottom: 50px;
 }
+
+
 
 /* Container4 Starts Here */
 .container4 {
@@ -440,6 +443,27 @@ hr {
     .right-disco>div {
         padding: 10px;
     }
+
+    .left-cont2,
+    .mid-cont2,
+    .right-cont2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .left-cont2 img,
+    .mid-cont2 img,
+    .right-cont2 img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .left-cont2 div,
+    .mid-cont2 div,
+    .right-cont2 div {
+        margin-top: 10px;
+    }
 }
 
 /* Responsive for 768px */
@@ -489,6 +513,11 @@ hr {
     .right-disco>div {
         padding: 10px;
     }
+
+    .Featuredflex2 img {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 /* for screens larger than 768px */
@@ -535,7 +564,6 @@ hr {
     .left-cont2,
     .mid-cont2,
     .right-cont2 {
-        flex: 3;
         font-family: "Poppins", sans-serif;
     }
 
@@ -554,5 +582,10 @@ hr {
 
     .fift-midd-container {
         flex-direction: row;
+    }
+
+    .Featuredflex2 img {
+        display: block;
+        margin: 0 auto;
     }
 }
