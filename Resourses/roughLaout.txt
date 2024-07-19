@@ -38,3 +38,17 @@ Experience the ultimate in convenience with our Chilled Express home delivery se
 ""If you have a Passion for Ice Cream then why not Drop by Our Stores
 
 "Discover the glamour of ice cream parlors at Gleele with In-Store Treats, offering a variety of fresh, hand-made treats you won't find anywhere else.
+
+
+
+
+
+
+    <!-- 1. big image   --Done
+        2. new arrivals     --Done
+        3. how we produce   --Done
+        4. our service like deleivery, fresh, offline stores, quality   --Done
+        5. 20% discount     --Done
+        6. small form for order 1st ice cream free      --Done
+        7. pricing off some ice creams      --Done
+        8. customer review  --Done  -->

@@ -396,7 +396,6 @@ hr {
     align-items: center;
     flex-direction: column;
     background-color: #f5f5f5;
-    height: 100vh;
     width: 100%;
     font-family: "Poppins", sans-serif;
 }
@@ -426,6 +425,7 @@ hr {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    margin-bottom: 70px;
 }
 
 .review-box:hover {
@@ -493,6 +493,50 @@ hr {
 .client-reviews {
     font-size: 0.9rem;
     color: #4b4b4b;
+}
+
+
+/* ----------------- Footer --------------------- */
+
+.footer {
+    background: linear-gradient(110deg, #F28C8C, #f4d6d6);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #000;
 }
 
 
