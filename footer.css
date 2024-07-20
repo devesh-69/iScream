@@ -1,0 +1,42 @@
+/* ----------------- Footer --------------------- */
+
+.footer {
+    background: linear-gradient(110deg, #F28C8C, #f4d6d6);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #000;
+}
