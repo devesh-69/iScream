@@ -13,6 +13,10 @@ a {
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
 }
 
+
+/* --------------- main-body-container --------------- */
+
+
 .carousel-item {
     position: relative;
 }
@@ -52,7 +56,7 @@ a {
 
 .btn-booknow span {
     position: absolute;
-    background: linear-gradient(110deg,#A3D9A5, #f4f1f1da);
+    background: linear-gradient(160deg, #A3D9A5, #f4f1f1da);
     background-color: #A3D9A5;
     height: 100%;
     width: 0;
