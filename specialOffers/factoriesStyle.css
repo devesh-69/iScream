@@ -80,3 +80,166 @@ a {
     margin-top: 15px;
     font-size: 1.2rem;
 }
+
+
+
+/* -------------------------- production-process-cont -------------------------- */
+
+.production-process-continer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main-body-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-body-cont h1 {
+    margin: 3.125rem 0;
+    letter-spacing: 0.25rem;
+}
+
+.all-process-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+.process {
+    flex: 1 1 30%;
+    margin: 1%;
+}
+
+.process-grid {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.process-headings {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #8b4513d3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+/* Up to 2560px */
+@media (max-width: 2560px) {
+    .process {
+        flex: 1 1 20%;
+    }
+
+    .main-body-cont h1 {
+        font-size: 3rem;
+    }
+
+    .process-headings {
+        font-size: 2rem;
+    }
+}
+
+/* Up to 1440px */
+@media (max-width: 1440px) {
+    .process {
+        flex: 1 1 30%;
+    }
+
+    .main-body-cont h1 {
+        font-size: 2.5rem;
+    }
+
+    .process-headings {
+        font-size: 22px;
+    }
+}
+
+/* Up to 1024px */
+@media (max-width: 1024px) {
+    .process {
+        flex: 1 1 30%;
+
+    }
+
+    .main-body-cont h1 {
+        font-size: 2.25rem;
+    }
+
+    .process-headings {
+        font-size: 20px;
+    }
+}
+
+/* Up to 768px */
+@media (max-width: 768px) {
+    .process {
+        flex: 1 1 100%;
+    }
+
+    .main-body-cont h1 {
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+
+    .process-headings {
+        font-size: 18px;
+    }
+}
+
+/* Up to 425px */
+@media (max-width: 425px) {
+    .main-body-cont h1 {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
+
+    .process-headings {
+        font-size: 1.25rem;
+    }
+
+    .process-grid {
+        padding: 5px;
+    }
+}
