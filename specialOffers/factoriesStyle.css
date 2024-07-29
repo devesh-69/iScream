@@ -131,11 +131,26 @@ a {
 
 
 
+.our-locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    overflow: scroll;
+    width: 100%;
+}
 
+.location-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
+.location-map {
+    flex: 1 1 0;
+    min-width: 600px;
 
-
-
+}
 
 
 
@@ -175,10 +190,6 @@ a {
     .main-body-cont h1 {
         font-size: 3rem;
     }
-
-    .process-headings {
-        font-size: 2rem;
-    }
 }
 
 /* Up to 1440px */
@@ -192,7 +203,17 @@ a {
     }
 
     .process-headings {
-        font-size: 22px;
+        font-size: 1.40rem;
+    }
+
+    .location-map {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    .location-map iframe {
+        width: 100%;
+        height: 400px;
+        border: 2px solid red;
     }
 }
 
@@ -200,7 +221,6 @@ a {
 @media (max-width: 1024px) {
     .process {
         flex: 1 1 30%;
-
     }
 
     .main-body-cont h1 {
@@ -208,7 +228,17 @@ a {
     }
 
     .process-headings {
-        font-size: 20px;
+        font-size: 1.25rem;
+    }
+
+    .location-map {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    .location-map iframe {
+        width: 100%;
+        height: 350px;
+        border: 2px solid green;
     }
 }
 
@@ -224,12 +254,22 @@ a {
     }
 
     .process-headings {
-        font-size: 18px;
+        font-size: 1.25rem;
+    }
+
+    .location-map {
+        flex: 1 1 100%;
+    }
+
+    .location-map iframe {
+        width: 100%;
+        height: 300px;
+        border: 2px solid blue;
     }
 }
 
-/* Up to 425px */
-@media (max-width: 425px) {
+/* Up to 430px */
+@media (max-width: 430px) {
     .main-body-cont h1 {
         font-size: 2rem;
         margin: 1.5rem 0;
@@ -241,5 +281,20 @@ a {
 
     .process-grid {
         padding: 5px;
+    }
+
+    .location-map iframe {
+        width: 100%;
+        height: 250px;
+        border: 2px solid purple;
+    }
+}
+
+/* Up to 320px */
+@media (max-width: 320px) {
+    .location-map iframe {
+        width: 100%;
+        height: 200px;
+        border: 2px solid orange;
     }
 }
