@@ -130,26 +130,28 @@ a {
 
 
 
-
 .our-locations {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    overflow: scroll;
+    overflow-y: auto;
     width: 100%;
+    height: 450px;
+    scroll-snap-type: x mandatory;
 }
 
 .location-row {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 20px;
+    width: 100%;
 }
 
 .location-map {
-    flex: 1 1 0;
-    min-width: 600px;
-
+    flex: 1 0 auto;
+    min-width: 300px;
+    scroll-snap-align: start;
 }
 
 
@@ -213,7 +215,6 @@ a {
     .location-map iframe {
         width: 100%;
         height: 400px;
-        border: 2px solid red;
     }
 }
 
@@ -238,7 +239,6 @@ a {
     .location-map iframe {
         width: 100%;
         height: 350px;
-        border: 2px solid green;
     }
 }
 
@@ -264,7 +264,6 @@ a {
     .location-map iframe {
         width: 100%;
         height: 300px;
-        border: 2px solid blue;
     }
 }
 
@@ -286,7 +285,6 @@ a {
     .location-map iframe {
         width: 100%;
         height: 250px;
-        border: 2px solid purple;
     }
 }
 
