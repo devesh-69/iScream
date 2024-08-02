@@ -1,5 +1,6 @@
 
 
 function booknow() {
-    window.location.href = "./ourFactories.html";
+    // Scroll to the element with id 'container5'
+    document.getElementById('book-formNow').scrollIntoView({ behavior: 'smooth' });
 }
