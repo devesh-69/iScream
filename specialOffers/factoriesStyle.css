@@ -241,7 +241,7 @@ a {
     margin-right: 10px;
 }
 
-.container-stories{
+.container-stories {
     margin: 0 5%;
     margin-bottom: 3rem;
 }
@@ -369,29 +369,35 @@ a {
     /* stories of employees */
 
     .stories {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
     .rounded-circle {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
 
     .img-h2 {
         font-size: 1.5rem;
     }
 
-    .view-button {
-        font-size: 0.9rem;
-    }
-
     .d-flex {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
     }
 
     .col-lg-4 {
         text-align: center;
+    }
+
+    .row {
+        margin: 0 10%;
+    }
+
+    .h1-icon {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
     }
 }
 
@@ -439,7 +445,8 @@ a {
         margin-top: 20px;
         text-align: center;
     }
-    .h1-icon{
+
+    .h1-icon {
         flex-direction: row;
         align-items: center;
         margin-bottom: 1.5rem;
