@@ -20,10 +20,8 @@ a {
 }
 
 .containter1 {
-    position: relative;
-    min-height: 100vh;
     background: linear-gradient(110deg, #F28C8C, #f4d6d6);
-    padding-bottom: 20px;
+    clip-path: ellipse(100% 85% at 50% 15%);
 }
 
 #curve {
@@ -43,10 +41,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 10%;
-    margin-top: 50px;
+    justify-content: center;
+    margin: 0 auto;
     height: auto;
-    max-width: 1200px;
+    width: 80%;
     background-color: transparent !important;
 }
 
@@ -69,8 +67,7 @@ a {
 }
 
 .right-cont img {
-    max-width: 100%;
-    height: auto;
+    width: 95%;
 }
 
 

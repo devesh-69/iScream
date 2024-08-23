@@ -31,6 +31,9 @@ a {
 
 .hero-container {
     display: flex;
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    clip-path: ellipse(100% 85% at 50% 15%);
 }
 
 .mid-container {
