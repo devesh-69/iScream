@@ -215,15 +215,19 @@ a {
     overflow: hidden;
     height: 300px;
     width: 150px;
+    /*this one is slow and smooth */
+    /* transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); */
+    /* this one is fast and smooth */
+    transition: 0.5s cubic-bezier(.87, -1.38, .03, 1.54);
 }
 
 .image-container img {
-    background-position: center;
-    background-size: cover;
-    transition: max-width 0.3s ease;
+    width: 300px;
 }
 
-/* .image-container:hover img {} */
+.image-container:hover {
+    width: 300px;
+}
 
 .overlay {
     position: absolute;
@@ -250,7 +254,6 @@ a {
 .icon-overlay {
     font-size: 24px;
     margin-right: 10px;
-    font-size: 18px;
     opacity: 0.9;
 }
 
