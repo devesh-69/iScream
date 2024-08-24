@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
@@ -27,11 +32,12 @@ a {
 
 
 
+
 /* ------------- CONTAINER 2 - Hero Page ------------- */
 
 .hero-container {
     display: flex;
-    background-color: #f0f0f0;
+    background: linear-gradient(135deg, #ffe4e1, #8fd9a8);
     padding: 50px 0;
     clip-path: ellipse(100% 85% at 50% 15%);
 }
@@ -39,15 +45,25 @@ a {
 .mid-container {
     display: flex;
     margin: 0 auto;
-    height: 90vh;
+    height: 80vh;
     width: 70%;
     padding: 20px;
     border-radius: 10px;
 }
 
 .left-section {
-    flex: 3;
+    flex: 2.5;
     margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.left-section h4 {
+    font-family: "League Spartan", "Poppins", sans-serif;
+    color: #c9a6a6;
+    text-align: start;
+    padding: 10px 20px;
+    /* text-shadow: 1px 1px 10px #0000001f; */
 }
 
 .headd {
@@ -55,14 +71,34 @@ a {
     background-color: #d9d9d9;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px dashed #c6c6c6;
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: calc(100% - 50px);
     background-color: #d9d9d9;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.content p {
+    text-align: start;
+    padding: 10px 20px;
+}
+
+.first-p {
+    margin-top: 15px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #28282B;
+}
+
+.second-p {
+    margin: 20px 0;
+    line-height: 28px;
 }
 
 .right-section {
@@ -77,6 +113,9 @@ a {
     background-color: #d9d9d9;
     border-radius: 10px;
     margin-bottom: 20px;
+    box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.1);
+    background: url("../Resourses/All ice creams/sandwitch ice cream.webp") no-repeat center center / cover;
+    opacity: 0.8;
 }
 
 .bottom-box {
@@ -86,10 +125,175 @@ a {
     background: #dddbdb7c;
     padding: 15px;
     border-radius: 10px;
+    box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .small-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
     height: 100px;
-    background-color: #c9a6a6;
+    background-color: #c9a6a64b;
     border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.small-box p {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    color: #28282B;
+}
+
+.small-box .number,
+.small-box .text {
+    display: block;
+    text-align: start;
+}
+
+.small-box .number {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.small-box .text {
+    margin-top: 5px;
+}
+
+
+
+
+/* CONTAINER 3 - we Belive in section */
+
+.believe-in-container {
+    text-align: center;
+    padding: 20px;
+    height: 80vh;
+}
+
+.heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.heading-container i {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.heading-container h2 {
+    margin-top: 10px 0;
+    font-family: "League Spartan", "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#icon {
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.images-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    width: 150px;
+}
+
+.image-container img {
+    background-position: center;
+    background-size: cover;
+    transition: max-width 0.3s ease;
+}
+
+/* .image-container:hover img {} */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+}
+
+.image-container:hover .overlay {
+    opacity: 0;
+    cursor: none;
+}
+
+.icon-overlay {
+    font-size: 24px;
+    margin-right: 10px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.overlay p {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-top: 6rem;
+    border-radius: 8px;
+    position: relative;
+    height: 50px;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee-items {
+    display: flex;
+}
+
+.marquee-content img {
+    background-size: cover;
+    background-position: center;
+    width: 8%;
+    margin-right: 22px;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
