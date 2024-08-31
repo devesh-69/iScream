@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap');
+
+
 
 * {
     padding: 0;
@@ -170,8 +173,7 @@ a {
 
 .believe-in-container {
     text-align: center;
-    padding: 20px;
-    height: 80vh;
+    margin-top: 2rem;
 }
 
 .heading-container {
@@ -213,8 +215,8 @@ a {
 .image-container {
     position: relative;
     overflow: hidden;
-    height: 300px;
-    width: 150px;
+    height: 340px;
+    width: 180px;
     /*this one is slow and smooth */
     /* transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); */
     /* this one is fast and smooth */
@@ -222,7 +224,7 @@ a {
 }
 
 .image-container img {
-    width: 300px;
+    width: 350px;
 }
 
 .image-container:hover {
@@ -269,8 +271,8 @@ a {
     white-space: nowrap;
     background-color: #e0e0e0;
     padding: 10px;
-    margin-top: 6rem;
-    border-radius: 8px;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
     position: relative;
     height: 50px;
 }
@@ -298,5 +300,950 @@ a {
 
     to {
         transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+/* CONTAINER 4 - Meet Our Team */
+
+
+.meet-our-team {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: url("../Resourses/mint_bg_AboutUs.png");
+    /* background-color: #333; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+}
+
+
+.head-ourTeam h1 {
+    color: white;
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+
+.dev-info {
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 500px;
+    width: 940px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 10px 10px 20px rgba(249, 249, 249, 0.3); */
+    background: transparent !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+}
+
+.profile-pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.profile-pic p {
+    margin-top: 20px;
+    color: #333;
+    /* color: white; */
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+}
+
+.profile-pic img {
+    width: 200px;
+    border-radius: 100%;
+    opacity: 0.8;
+}
+
+.profile-info {
+    margin: auto;
+    padding: 50px;
+}
+
+.profile-info p {
+    color: #333;
+    /* color: white; */
+    font-size: 15px;
+    text-align: start;
+    letter-spacing: 0.5px;
+}
+
+
+
+/* --------------- CONTAINER 5 - Join Our Family --------------- */
+
+
+.main-join-content {
+    display: flex;
+    height: max-content;
+}
+
+.circle-left {
+    width: 400px;
+}
+
+.circle-left img {
+    width: 900px;
+    transform: translateX(-32%);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.soical-conatiner {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 5% 10%;
+}
+
+.soical-conatiner h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    color: #312f2f;
+    text-align: right;
+}
+
+.highlight {
+    background: linear-gradient(135deg, #8fd9a8, #4f4f4da0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 80px;
+    gap: 20px;
+    font-family: "Anonymous Pro", system-ui;
+    font-weight: 700;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 12px 30px;
+    border-radius: 5px;
+    color: #121212;
+    background: transparent !important;
+    box-shadow: 2px 1px;
+    border: 1px solid #121212;
+    transition: ease-out 0.3s;
+}
+
+.button:hover {
+    scale: 1.02;
+}
+
+.lordicon {
+    display: flex;
+    align-items: center;
+}
+
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 80px;
+    gap: 30px;
+}
+
+.social-icon {
+    height: 45px;
+    width: 45px;
+    transition: ease-in-out 0.3s;
+}
+
+.social-icon:hover {
+    filter: drop-shadow(-2px 2px 5px rgba(0, 0, 0, 0.3));
+    scale: 4;
+}
+
+
+
+/* -------------- CONTAINER 6 - customer Reviews -------------- */
+
+.review-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #ffe4e1, #abf9c500);
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.customer-reviews {
+    letter-spacing: 1px;
+    margin: 50px 0;
+    padding: 10px 20xp;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.customer-reviews h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #8b4513d4;
+    color: white;
+    padding: 10px 20px;
+}
+
+.review-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.review-box:hover {
+    /* transform: translateY(-10px);           for if review-box need to get -10px up as transition */
+    scale: 1.02;
+    transition: ease-in 0.2s;
+}
+
+.review-box {
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name strong {
+    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    color: #3d3d3d;
+}
+
+.user-name span {
+    color: #979797;
+    font-size: 0.8rem;
+}
+
+.actual-review {
+    color: #f9d71c;
+}
+
+.profile-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.client-reviews {
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+
+
+.footer {
+    background: linear-gradient(135deg, #ffe4e1, #8fd9a8) !important;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive Media Queries */
+
+/* For screens 1024px and up */
+@media (max-width: 1100px) {
+
+    /* Hero Page */
+    .mid-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .left-section h4 {
+        font-size: 1.2rem;
+        padding: 15px 20px;
+    }
+
+    .first-p {
+        font-size: 2.5rem;
+    }
+
+    .small-box {
+        height: 80px;
+    }
+
+    .small-box p {
+        font-size: 12px;
+    }
+
+    /* We Believe In Section */
+    .heading-container h2 {
+        font-size: 2.7rem;
+    }
+
+    .images-row {
+        gap: 15px;
+    }
+
+    .image-container {
+        width: 200px;
+        height: 250px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .marquee {
+        margin-bottom: 0;
+        box-shadow: 0.5px 0.5px 10px rgb(18, 18, 18, 0.2);
+    }
+
+    .marquee img {
+        width: 10%;
+    }
+
+    /* Meet Our Team Section */
+    .meet-our-team {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .dev-info {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .profile-pic {
+        padding: 30px;
+    }
+
+    .profile-pic img {
+        width: 200px;
+    }
+
+    .profile-pic p {
+        font-size: 25px;
+    }
+
+    .profile-info {
+        padding: 20px;
+    }
+
+    .profile-info p {
+        font-size: 14px;
+        /* text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.3); */
+    }
+
+    /* Join Our Family Section */
+    .join-us {
+        padding: 50px 0;
+    }
+
+    .main-join-content {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle-left img {
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    .soical-conatiner {
+        flex: none;
+        margin: 0;
+        margin-right: 35px;
+    }
+
+    .soical-conatiner h1 {
+        font-size: 2.2rem;
+        margin: 20px 30px 0 0;
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+    }
+
+    .buttons {
+        flex-direction: row;
+        align-items: flex-end;
+        margin-top: 30px;
+        margin-right: 35px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .social-links {
+        flex-direction: row;
+        margin-top: 40px;
+        margin-right: 30px;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .social-icon:hover {
+        scale: 3;
+    }
+
+
+    /* Customer Reviews Section */
+    .review-section {
+        padding: 50px 0;
+    }
+
+    .customer-reviews h1 {
+        font-size: 2rem;
+        padding: 10px 20px;
+    }
+
+    .review-box-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .review-box {
+        width: 400px;
+    }
+
+    .review-box:hover {
+        scale: 1.02;
+    }
+
+    .user-name strong {
+        font-size: 1rem;
+    }
+
+    .user-name span {
+        font-size: 0.7rem;
+    }
+
+    .actual-review {
+        font-size: 1rem;
+    }
+
+    .client-reviews {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+/* For screens 768px and up */
+@media (max-width: 800px) {
+
+    /* Hero Page */
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .mid-container {
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+    }
+
+    .left-section h4 {
+        font-size: 1.1rem;
+        padding: 15px 20px;
+    }
+
+    .first-p {
+        font-size: 2rem;
+    }
+
+    .second-p {
+        margin: 20px 0;
+        line-height: 24px;
+        font-size: 14px;
+    }
+
+    .bottom-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .small-box {
+        height: 60px;
+        width: auto;
+    }
+
+    .small-box .text {
+        margin: 0;
+    }
+
+    .small-box .number {
+        margin: 0;
+        font-size: 22px;
+    }
+
+    .small-box p {
+        font-size: 12px;
+        margin-top: -5px;
+        text-align: start;
+    }
+
+    /* We Believe In Section */
+    .heading-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .images-row {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        transition: 0.5s cubic-bezier(.87, -1.38, .03, 1.54);
+        gap: 10px;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 200px;
+    }
+
+    .image-container img {
+        height: 100%;
+        width: auto;
+    }
+
+    .marquee {
+        margin-bottom: 0;
+        box-shadow: 0.5px 0.5px 10px rgb(18, 18, 18, 0.2);
+    }
+
+    .marquee-content img {
+        width: 12%;
+    }
+
+
+    /* Meet Our Team Section */
+    .meet-our-team {
+        padding: 20px 5%;
+    }
+
+    .head-ourTeam h1 {
+        font-size: 3rem;
+    }
+
+    .dev-info {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .profile-pic {
+        padding: 20px;
+    }
+
+    .profile-pic img {
+        width: 150px;
+    }
+
+    .profile-pic p {
+        font-size: 26px;
+    }
+
+    .profile-info {
+        padding: 15px;
+    }
+
+    .profile-info p {
+        font-size: 13px;
+    }
+
+
+    /* Join Our Family Section */
+    .join-us {
+        padding: 30px 0;
+    }
+
+    .main-join-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .circle-left img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .soical-conatiner {
+        flex: none;
+    }
+
+    .soical-conatiner h1 {
+        font-size: 2.2rem;
+        margin: 20px 30px 0 0;
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+    }
+
+    .buttons {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        margin-left: 140px;
+        gap: 0;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+
+    .social-links {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 35px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-icon:hover {
+        scale: 2;
+    }
+
+
+    /* Customer Reviews Section */
+    .review-section {
+        padding: 30px 0;
+    }
+
+    .customer-reviews h1 {
+        font-size: 1.5rem;
+        padding: 10px 20px;
+    }
+
+    .review-box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-box {
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    .review-box:hover {
+        scale: 1.02;
+    }
+
+    .profile-image img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .user-name strong {
+        font-size: 1rem;
+    }
+
+    .user-name span {
+        font-size: 0.7rem;
+    }
+
+    .actual-review {
+        font-size: 1rem;
+    }
+
+    .client-reviews {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+/* For smaller Devices */
+@media (max-width: 480px) {
+
+    /* Hero Page */
+    .mid-container {
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .left-section {
+        margin-left: 20px;
+    }
+
+    .left-section h4 {
+        font-size: 1.2rem;
+        padding: 15px 20px;
+    }
+
+    .first-p {
+        font-size: 1.7rem;
+    }
+
+    .second-p {
+        line-height: 22px;
+        font-size: 0.8rem;
+    }
+
+    .small-box {
+        height: 60px;
+        padding: 5px;
+    }
+
+    .small-box .text {
+        margin-top: -5px;
+    }
+
+    .small-box p {
+        font-size: 12px;
+    }
+
+    /* We Believe In Section */
+
+    .heading-container {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .heading-container h2 {
+        margin-top: 20px;
+        font-size: 2.3rem;
+    }
+
+    .images-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: -20px;
+    }
+
+    .image-container {
+        border-radius: 10px;
+        transition: all 0.6s cubic-bezier(0.6, -0.3, 0.4, 1.5);
+    }
+
+    .image-container img {
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+    }
+
+    #imgeForSM {
+        display: none;
+        /* transform: translateX(55%); */
+    }
+
+    /* it dosn't look good 5 items in 1 frame so i removed it */
+
+    /* #imgeForSM:hover {
+        transform: translateX(0);
+    } */
+
+    .marquee {
+        margin-bottom: 1px;
+        height: 55px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .marquee-content img {
+        height: 35px;
+        width: 30%;
+        margin-right: 10px;
+    }
+
+
+    /* Meet Our Team Section */
+    .meet-our-team {
+        padding: 20px 0;
+        background: url("../Resourses/mint_bg_AboutUs.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    .meet-our-team h1 {
+        font-size: 2.3rem;
+        color: #121212b6;
+        margin-top: 20px;
+    }
+
+    .dev-info {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .profile-pic img {
+        width: 180px;
+    }
+
+    .profile-pic p {
+        font-size: 26px;
+    }
+
+    .profile-info {
+        padding: 10px;
+    }
+
+    .profile-info p {
+        font-size: 14px;
+    }
+
+    /* Join Our Family Section */
+
+    .main-join-content {
+        flex-direction: column-reverse;
+    }
+
+    .circle-left {
+        width: auto;
+        margin-top: 10%;
+    }
+
+    .circle-left img {
+        transform: none;
+        margin-bottom: -30px;
+    }
+
+    .soical-conatiner h1 {
+        font-size: 2.3rem;
+    }
+
+    .buttons {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        margin-top: 40px;
+        gap: 0;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .social-links {
+        flex-direction: row;
+        margin-top: 40px;
+    }
+
+    .social-icon {
+        margin-top: 20px;
+        height: 40px;
+    }
+
+    .social-icon:hover {
+        scale: 2;
+    }
+
+    /* Customer Reviews Section */
+
+    .review-section {
+        padding: 0 20px;
+        height: max-content;
+    }
+
+    .customer-reviews h1 {
+        font-size: 2.2rem;
+        padding: 10px 20px;
+    }
+
+    .review-box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .review-box:hover {
+        scale: 1.02;
+    }
+
+    .profile-image img {
+        border-radius: 100%;
+    }
+
+    .user-name strong {
+        font-size: 0.9rem;
+    }
+
+    .user-name span {
+        font-size: 0.6rem;
+    }
+
+    .actual-review {
+        font-size: 0.9rem;
+    }
+
+    .client-reviews {
+        font-size: 0.7rem;
     }
 }
