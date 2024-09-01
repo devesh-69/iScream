@@ -201,7 +201,7 @@ hr {
 
 .Featuredflex2 img {
     height: 200px;
-    width: auto;
+    width: 55%;
     border-radius: 100%;
 }
 
@@ -212,7 +212,6 @@ hr {
     justify-content: space-between;
     margin-bottom: 50px;
 }
-
 
 /* Container4 Starts Here */
 .container4 {
@@ -621,9 +620,9 @@ hr {
     }
 
     .Featuredflex2 img {
-        height: 150px;
-        width: auto;
-        margin-bottom: 20px;
+        height: 200px;
+        width: 65%;
+        margin: 5% 0;
     }
 
     .left-cont2,
