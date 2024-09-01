@@ -10,17 +10,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <link rel="stylesheet" href="contactStyle.css">
+    <link rel="stylesheet" href="recipeStyle.css">
     <link rel="stylesheet" href="../footer.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <title>ContactUS</title>
+    <title>Ice Cream Recipes</title>
 </head>
 
 <body>
+
     <!------------------------- CONTAINER 1 Navbar ------------------------->
 
     <div class="nav-container">
@@ -53,11 +54,11 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Recipes</a></li>
+                                <li><a class="dropdown-item active" href="recipeIndex.html">Recipes</a></li>
                                 <li><a class="dropdown-item" href="#">Become a Partner</a></li>
                                 <li><a class="dropdown-item" href="#">Employee Stories</a></li>
                                 <hr class="dropdown-divider">
-                                <li><a class="dropdown-item active" href="contactUs.html">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="contactUs.html">Contact Us</a></li>
                                 <li><a class="dropdown-item" href="../aboutUS/aboutindex.html">About Us </a></li>
                             </ul>
                         </li>
@@ -67,7 +68,7 @@
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-secondary"" type=" submit">Search</button>
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
                     </form>
                 </div>
             </div>
@@ -75,55 +76,30 @@
     </div>
 
 
-    <!------------------------- CONTAINER 2 Contact Form ------------------------->
+    <!------------------------- Recipes Section ------------------------->
 
-    <!-- Contact Section -->
-    <section class="contact-section py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <!-- Contact Information -->
-                <div class="col-md-5 mb-4">
-                    <div class="contact-info p-4 shadow-sm rounded">
-                        <h2 class="mb-4">Get in Touch</h2>
-                        <p><strong>Call Us:</strong><br>91 (234) 567-891<br>91 (234) 987-654</p>
-                        <p><strong>Location:</strong><br>2, Chhatrapati Shivaji International Airport Area, Bandra
-                            Terminus, Vile Parle East, Vile Parle,,<br> Mumbai, Maharashtra 400099</p>
-                        <p><strong>Business Hours:</strong><br>Mon – Fri: 10 am – 8 pm<br>Sat, Sun: Closed</p>
-                    </div>
-                </div>
-
-                <!-- Contact Form -->
-                <div class="col-md-7">
-                    <div class="contact-form p-4 shadow-sm rounded">
-                        <h2 class="mb-4">Contact Us</h2>
-                        <form action="#" method="POST">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Your Name</label>
-                                <input type="text" class="form-control" id="name" name="name"
-                                    placeholder="Enter your Name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Your Email</label>
-                                <input type="email" class="form-control" id="email" name="email"
-                                    placeholder="Enter a valid email address" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Your Number</label>
-                                <input type="email" class="form-control" id="email" name="email"
-                                    placeholder="Enter a valid Number" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Your Message</label>
-                                <textarea class="form-control" id="message" name="message" rows="5"
-                                    placeholder="Your Message" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary px-5">Submit</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+        <h1>Some Secret Recipes <span><lord-icon src="https://cdn.lordicon.com/qqvulgky.json" id="lor-icon"
+                    trigger="hover" colors="primary:#121331,secondary:#f28c8c" style="width:50px;height:50px">
+                </lord-icon></h1></span>
+        <div id="recipes" class="row">
+            <!-- Recipe cards will be inserted here -->
         </div>
-    </section>
+    </div>
+    <div id="recipe-detail" class="recipe-detail">
+        <span class="close-btn">&times;</span>
+        <h2>Recipe Name</h2>
+        <img src="recipe-image-url" alt="Recipe Name">
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>Ingredient 1 - Measurement</li>
+            <li>Ingredient 2 - Measurement</li>
+            <!-- More ingredients -->
+        </ul>
+        <h3>Instructions:</h3>
+        <p>Step-by-step instructions...</p>
+    </div>
+
 
 
     <!-- Footer Section -->
@@ -133,11 +109,13 @@
             <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
             <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
             <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="#/"><ion-icon name="bookmark-outline"></ion-icon></a>
+            <a href="#"><ion-icon name="bookmark-outline"></ion-icon></a>
         </div>
-        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="contactUs.html">Contact Us</a>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a
+                href="../specialOffers/contactUs.html">Contact Us</a>
         </p>
     </div>
+
 
 
 
@@ -145,7 +123,7 @@
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="contactUSJs.js"></script>
+    <script src="recipeScript.js"></script>
 </body>
 
 </html>
