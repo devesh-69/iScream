@@ -201,7 +201,7 @@ hr {
 
 .Featuredflex2 img {
     height: 200px;
-    width: 55%;
+    width: 50%;
     border-radius: 100%;
 }
 
@@ -694,8 +694,7 @@ hr {
     }
 
     .Featuredflex2 img {
-        height: 200px;
-        width: auto;
+        height: 280px;
         margin-bottom: 20px;
     }
 
@@ -843,6 +842,7 @@ hr {
     .Featuredflex2 img {
         display: block;
         margin: 0 auto;
+        max-width: 100%;
     }
 }
 
