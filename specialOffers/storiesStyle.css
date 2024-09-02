@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: hsl(0, 0%, 100%);
+    --foreground: hsl(240, 10%, 3.9%);
+    --card: hsl(0, 0%, 100%);
+    --card-foreground: hsl(240, 10%, 3.9%);
+    --popover: hsl(0, 0%, 100%);
+    --popover-foreground: hsl(240, 10%, 3.9%);
+    --primary: hsl(240, 5.9%, 10%);
+    --primary-foreground: hsl(0, 0%, 98%);
+    --secondary: hsl(240, 4.8%, 95.9%);
+    --secondary-foreground: hsl(240, 5.9%, 10%);
+    --muted: hsl(240, 4.8%, 95.9%);
+    --muted-foreground: hsl(240, 3.8%, 45%);
+    --accent: hsl(240, 4.8%, 95.9%);
+    --accent-foreground: hsl(240, 5.9%, 10%);
+    --destructive: hsl(0, 72%, 51%);
+    --destructive-foreground: hsl(0, 0%, 98%);
+    --border: hsl(240, 5.9%, 90%);
+    --input: hsl(240, 5.9%, 90%);
+    --ring: hsl(240, 5.9%, 10%);
+    --chart-1: hsl(173, 58%, 39%);
+    --chart-2: hsl(12, 76%, 61%);
+    --chart-3: hsl(197, 37%, 24%);
+    --chart-4: hsl(43, 74%, 66%);
+    --chart-5: hsl(27, 87%, 67%);
+    --radius: 0.5rem;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inter', sans-serif;
+}
+
+.heading-h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 11.5%;
+}
+
+img[src="/placeholder.svg"],
+img[src="/placeholder-user.jpg"] {
+    filter: sepia(0.3) hue-rotate(-60deg) saturate(0.5) opacity(0.8);
+}
+
+.w-full {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.bg-muted {
+    background-color: var(--muted);
+}
+
+.py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.md\\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.lg\\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-y-4>*:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.tracking-tighter {
+    letter-spacing: -0.05em;
+}
+
+.sm\\:text-5xl {
+    font-size: 3rem;
+}
+
+.text-muted-foreground {
+    color: var(--muted-foreground);
+}
+
+.md\\:text-xl\\/relaxed {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.lg\\:text-base\\/relaxed {
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+.xl\\:text-xl\\/relaxed {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.sm\\:grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.md\\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.lg\\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gap-6 {
+    gap: 1.5rem;
+}
+
+.bg-card {
+    background-color: var(--card);
+}
+
+.text-card-foreground {
+    color: var(--card-foreground);
+}
+
+.rounded-lg {
+    border-radius: var(--radius);
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.pb-4 {
+    padding-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.leading-relaxed {
+    line-height: 1.625;
+}
+
+.aspect-square {
+    aspect-ratio: 1 / 1;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.rounded-t-lg {
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .grid-cols-1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .heading-h2 {
+        font-family: "League Spartan", "Poppins", sans-serif;
+        font-size: 2rem;
+        margin: 0;
+        margin: 3.5%;
+    }
+
+    .py-12 {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .heading-h2 {
+        font-family: "League Spartan", "Poppins", sans-serif;
+        font-size: 2rem;
+        margin: 0;
+        margin: 3.5%;
+    }
+
+    .py-12 {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .grid-cols-2 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .heading-h2 {
+        font-family: "League Spartan", "Poppins", sans-serif;
+        font-size: 2rem;
+        margin: 0;
+        margin: 2%;
+    }
+
+    .py-12 {
+        padding-top: 0;
+    }
+}
