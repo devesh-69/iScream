@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delightful Ice Cream Flavors</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    :root {
+        --primary-color: #ff6b6b;
+        --secondary-color: #4ecdc4;
+        --text-color: #2d3436;
+        --background-color: #f0f0f0;
+        --button-color: #ff9ff3;
+        --button-hover-color: #f368e0;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-color);
+    }
+
+    .flavors {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        color: var(--primary-color);
+        opacity: 0;
+        transform: translateY(-20px);
+        animation: fadeInDown 0.8s ease forwards;
+    }
+
+    .flavor-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .flavor-card {
+        width: 280px;
+        background-color: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        opacity: 0;
+        transform: translateY(20px);
+        position: relative;
+    }
+
+    .flavor-card:hover {
+        transform: translateY(-10px) rotate(2deg);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .flavor-image {
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .flavor-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .flavor-card:hover .flavor-image img {
+        transform: scale(1.050);
+    }
+
+    .flavor-info {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .flavor-info h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: var(--secondary-color);
+    }
+
+    .flavor-info p {
+        font-size: 1rem;
+        color: var(--text-color);
+        opacity: 0.8;
+        margin-bottom: 1rem;
+    }
+
+    .view-more {
+        background-color: var(--button-color);
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    .flavor-card:hover .view-more {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .view-more:hover {
+        background-color: var(--button-hover-color);
+    }
+
+    @keyframes fadeInDown {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .section-title {
+            font-size: 2.5rem;
+        }
+
+        .flavor-card {
+            width: calc(50% - 1rem);
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .flavors {
+            padding: 2rem 1rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .flavor-card {
+            width: 100%;
+        }
+
+        .view-more {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<body>
+    <section class="flavors">
+        <h2 class="section-title">Our Irresistible Flavors</h2>
+        <div class="flavor-container">
+            <div class="flavor-card">
+                <div class="flavor-image">
+                    <img src="./Resourses/All ice creams/Sundae ice cream.webp" alt="Vanilla Delight">
+                </div>
+                <div class="flavor-info">
+                    <h3>Vanilla Delight</h3>
+                    <p>Smooth, creamy, and utterly classic</p>
+                    <button class="view-more">View More</button>
+                </div>
+            </div>
+            <div class="flavor-card">
+                <div class="flavor-image">
+                    <img src="./Resourses/All ice creams/Sundae ice cream.webp" alt="Chocolate Dream">
+                </div>
+                <div class="flavor-info">
+                    <h3>Chocolate Dream</h3>
+                    <p>Rich, indulgent, and deeply satisfying</p>
+                    <button class="view-more">View More</button>
+                </div>
+            </div>
+            <div class="flavor-card">
+                <div class="flavor-image">
+                    <img src="./Resourses/All ice creams/Sundae ice cream.webp" alt="Strawberry Bliss">
+                </div>
+                <div class="flavor-info">
+                    <h3>Strawberry Bliss</h3>
+                    <p>Fresh, fruity, and bursting with flavor</p>
+                    <button class="view-more">View More</button>
+                </div>
+            </div>
+            <div class="flavor-card">
+                <div class="flavor-image">
+                    <img src="./Resourses/All ice creams/Sundae ice cream.webp" alt="Strawberry Bliss">
+                </div>
+                <div class="flavor-info">
+                    <h3>Strawberry Bliss</h3>
+                    <p>Fresh, fruity, and bursting with flavor</p>
+                    <button class="view-more">View More</button>
+                </div>
+            </div>
+            <div class="flavor-card">
+                <div class="flavor-image">
+                    <img src="./Resourses/All ice creams/Sundae ice cream.webp" alt="Strawberry Bliss">
+                </div>
+                <div class="flavor-info">
+                    <h3>Strawberry Bliss</h3>
+                    <p>Fresh, fruity, and bursting with flavor</p>
+                    <button class="view-more">View More</button>
+                </div>
+            </div>
+            <div class="flavor-card">
+                <div class="flavor-image">
+                    <img src="./Resourses/All ice creams/Sundae ice cream.webp" alt="Strawberry Bliss">
+                </div>
+                <div class="flavor-info">
+                    <h3>Strawberry Bliss</h3>
+                    <p>Fresh, fruity, and bursting with flavor</p>
+                    <button class="view-more">View More</button>
+                </div>
+            </div>
+            <div class="flavor-card">
+                <div class="flavor-image">
+                    <img src="./Resourses/All ice creams/Sundae ice cream.webp" alt="Strawberry Bliss">
+                </div>
+                <div class="flavor-info">
+                    <h3>Strawberry Bliss</h3>
+                    <p>Fresh, fruity, and bursting with flavor</p>
+                    <button class="view-more">View More</button>
+                </div>
+            </div>
+            <div class="flavor-card">
+                <div class="flavor-image">
+                    <img src="./Resourses/All ice creams/Sundae ice cream.webp" alt="Strawberry Bliss">
+                </div>
+                <div class="flavor-info">
+                    <h3>Strawberry Bliss</h3>
+                    <p>Fresh, fruity, and bursting with flavor</p>
+                    <button class="view-more">View More</button>
+                </div>
+            </div>
+            <div class="flavor-card">
+                <div class="flavor-image">
+                    <img src="./Resourses/All ice creams/Sundae ice cream.webp" alt="Mint Chip Madness">
+                </div>
+                <div class="flavor-info">
+                    <h3>Mint Chip Madness</h3>
+                    <p>Cool mint with a chocolatey crunch</p>
+                    <button class="view-more">View More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const flavorCards = document.querySelectorAll('.flavor-card');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.animation = `fadeInUp 0.8s ease forwards ${index * 0.2}s`;
+                        }, 100);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            flavorCards.forEach(card => {
+                observer.observe(card);
+            });
+
+            // Add hover effect for flavor cards
+            flavorCards.forEach(card => {
+                const viewMoreButton = card.querySelector('.view-more');
+
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-10px) rotate(2deg)';
+                    card.style.boxShadow = '0 15px 30px rgba(0, 0, 0, 0.2)';
+                    viewMoreButton.style.opacity = '1';
+                    viewMoreButton.style.transform = 'translateY(0)';
+                });
+
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(0) rotate(0)';
+                    card.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.1)';
+                    viewMoreButton.style.opacity = '0';
+                    viewMoreButton.style.transform = 'translateY(10px)';
+                });
+
+                // Add click event for view more button
+                viewMoreButton.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    alert(`You clicked View More for ${card.querySelector('h3').textContent}`);
+                    // Here you can add logic to show more details about the flavor
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

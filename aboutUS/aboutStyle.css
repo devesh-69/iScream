@@ -1178,7 +1178,7 @@ a {
         flex-direction: row-reverse;
         justify-content: space-evenly;
         margin-top: 40px;
-        gap: 0;
+        gap: 20px;
     }
 
     .button {
