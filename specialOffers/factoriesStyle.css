@@ -384,11 +384,7 @@ a {
     .col-lg-4 {
         text-align: center;
     }
-
-    .row {
-        margin: 0 10%;
-    }
-
+    
     .h1-icon {
         display: flex;
         justify-content: center;
