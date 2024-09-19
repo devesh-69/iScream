@@ -1,15 +1,40 @@
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f8f8f8;
+    color: #333;
+    animation: fadeIn 1.5s ease-in;
 }
 
-#getNow-button{
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#getNow-button {
     border-radius: 5px;
+    background-color: #ff3e3e;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#getNow-button:hover {
+    background-color: #e53737;
+    transform: scale(1.05);
 }
 
 .container {
@@ -18,6 +43,7 @@ body {
     flex-direction: column;
 }
 
+/* Header */
 .header {
     background: linear-gradient(110deg, #F28C8C, #f4d6d6);
     padding: 4rem 0;
@@ -25,23 +51,52 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    animation: fadeInUp 1s ease-in;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .header h1 {
     font-size: 3rem;
-    color: #ff6b6b;
+    color: #ff3e3e;
 }
 
 .header p {
     font-size: 1.2rem;
-    color: #8c4b4b;
-    margin-top: 1rem;
+    color: #663c3c;
 }
 
+/* Icons */
 .icons {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+}
+
+@keyframes scaleSequence {
+
+    0%,
+    20% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(1.2);
+    }
+
+    30% {
+        transform: scale(1);
+    }
 }
 
 .icon {
@@ -49,28 +104,63 @@ body {
     height: 80px;
     margin: 0 10px;
     border-radius: 100%;
+    border: 2px solid #ff3e3e;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: scaleSequence 10s infinite;
+    animation-delay: calc(2s * var(--icon-index));
 }
 
+.icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 4px 10px rgba(255, 99, 99, 0.4);
+}
+
+/* Stagger the animation for each icon */
+.icons .icon:nth-child(1) {
+    --icon-index: 0;
+}
+
+.icons .icon:nth-child(2) {
+    --icon-index: 1;
+}
+
+.icons .icon:nth-child(3) {
+    --icon-index: 2;
+}
+
+.icons .icon:nth-child(4) {
+    --icon-index: 3;
+}
+
+.icons .icon:nth-child(5) {
+    --icon-index: 4;
+}
+
+/* Benefits Section */
 .benefits {
-    background: #fffaee;
+    background: #fff5e1;
     padding: 3rem 2rem;
     text-align: center;
+    animation: fadeInUp 1s ease-in;
 }
 
 .benefits h2 {
     font-size: 2rem;
-    color: #ff6b6b;
+    color: #ff5c5c;
 }
 
 .benefit-item {
     display: flex;
     align-items: center;
     margin-top: 1.5rem;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease forwards;
 }
 
 .benifits-in-row {
     display: flex;
     justify-content: space-between;
+    padding: 0 25px;
 }
 
 .benefit-icon {
@@ -82,14 +172,15 @@ body {
 
 .benefit-item h3 {
     font-size: 1.5rem;
-    color: #ff6b6b;
+    color: #ff3e3e;
     margin-bottom: 0.5rem;
 }
 
 .benefit-item p {
-    color: #8c4b4b;
+    color: #5a3d3d;
 }
 
+/* Pricing Section (unchanged) */
 .pricing {
     background: #fffaee;
     padding: 3rem 2rem;
@@ -115,16 +206,12 @@ body {
     border-radius: 5px;
     margin: 0 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.pricing-toggle button.active {
-    background-color: #dcdcdc;
-    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .pricing-toggle button:hover {
     background-color: #e65a5a;
+    transform: scale(1.05);
 }
 
 .pricing-cards {
@@ -142,6 +229,12 @@ body {
     max-width: 300px;
     text-align: center;
     flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card h3 {
@@ -183,10 +276,99 @@ body {
     background-color: #e65a5a;
 }
 
-footer {
-    background: #ff6b6b;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: auto;
+
+
+
+
+
+
+
+/* Media query for 430px and below */
+@media (max-width: 430px) {
+    .header {
+        padding: 2rem 1.5rem;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .icons {
+        margin-top: 1rem;
+        gap: 10px;
+    }
+
+    .icon {
+        width: 65px;
+        height: 65px;
+        margin: 10px 0;
+    }
+
+    .benefits {
+        padding: 2rem 1rem;
+    }
+
+    .benefits h2 {
+        font-size: 1.5rem;
+    }
+
+    .benifits-in-row {
+        padding: 0;
+    }
+
+    .benefit-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .benefit-icon {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+
+    .benefit-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .pricing {
+        padding: 2rem 1rem;
+    }
+
+    .pricing h2 {
+        font-size: 1.5rem;
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+    }
+
+    .card .price {
+        font-size: 2rem;
+    }
+
+    .pricing-toggle {
+        flex-direction: column;
+    }
+
+    .pricing-toggle button {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
 }

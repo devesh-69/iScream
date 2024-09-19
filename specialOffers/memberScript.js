@@ -1,3 +1,8 @@
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("#main"),
+  smooth: true,
+});
+
 // Function to update pricing
 function updatePricing(plan) {
   const basicPrice = document.getElementById("basic-price");
