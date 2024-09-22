@@ -18,7 +18,8 @@ iScream is a web-based project designed to satisfy your ice cream cravings. Whet
 
 ## 📸 Screenshots
 
---- wait for example
+![linkdine post](https://github.com/user-attachments/assets/2ee9c26c-fad3-4fc7-849b-6fd79eebe3fc)
+
 
 ## 🔧 Installation
 
